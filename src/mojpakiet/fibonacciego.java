@@ -1,3 +1,5 @@
+package mojpakiet;
+
 public class fibonacciego {
     public static void ciag(){
         int pierwszy = 1;

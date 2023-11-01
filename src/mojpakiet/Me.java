@@ -1,3 +1,5 @@
+package mojpakiet;
+
 class Me {
 
 
