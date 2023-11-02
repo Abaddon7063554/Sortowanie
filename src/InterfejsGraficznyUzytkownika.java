@@ -11,7 +11,7 @@ public class InterfejsGraficznyUzytkownika implements ActionListener {
        obiekt1.tworzOkno();
     }
     public void tworzOkno(){
-        okno = new JFrame("witaj swiecie");
+        okno = new JFrame("w2itaj swiecie");
         przycisk1 = new JButton("Klinij mnie");
         przycisk1.addActionListener(this);
         okno.setSize(400, 500);
