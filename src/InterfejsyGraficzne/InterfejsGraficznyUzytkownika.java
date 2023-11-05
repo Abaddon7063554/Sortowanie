@@ -12,7 +12,7 @@ public class InterfejsGraficznyUzytkownika implements ActionListener {
        InterfejsGraficznyUzytkownika obiekt1 = new InterfejsGraficznyUzytkownika();
        obiekt1.tworzOkno();
     }
-    public void tworzOkno(){
+    public void tworzOknoa(){
         okno = new JFrame("w2itaj swiecie");
         przycisk1 = new JButton("Klinij mnie");
         przycisk1.addActionListener(this);
