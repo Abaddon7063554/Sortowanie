@@ -3,11 +3,14 @@ package InterfejsyGraficzne;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
+import java.awt.GridLayout;
 
 public class InterfejsZDwomaPrzyciskami implements ActionListener , MouseListener  {
     JFrame okno;
     JButton rozmiar_okna;
     JButton przycisk;
+    TextField tekst1;
+    TextField tekst2;
     public static int wartosc = 0 ;
     public static void main (String[] args){
         InterfejsZDwomaPrzyciskami obiekt = new InterfejsZDwomaPrzyciskami();
@@ -16,22 +19,32 @@ public class InterfejsZDwomaPrzyciskami implements ActionListener , MouseListene
     }
     public void generowanieOkna(){
         okno = new JFrame("Okno z przyciskiem");
-        rozmiar_okna = new JButton("rozmiar okna");
-        rozmiar_okna.setSize(100, 200); // Ustawienie rozmiarów przycisku
+        rozmiar_okna = new JButton("2");
+        przycisk = new JButton("skopiuj tekst ");
+        tekst1 = new TextField("wpisz tekst");
+        tekst2 = new TextField("tekst skopiowany");
+        rozmiar_okna.setSize(200, 200); // Ustawienie rozmiarów przycisku
+        przycisk.setSize(200,200);
+        tekst1.setSize(100,100);
+        okno.setSize(400,100);
+        okno.setLayout(new GridLayout(2,2));
+        okno.setVisible(true);
         rozmiar_okna.addActionListener(this);
         okno.addMouseListener(this);
+        przycisk.addActionListener(this);
         rozmiar_okna.setForeground(Color.GREEN);
         rozmiar_okna.setBackground(Color.RED);
-        przycisk = new JButton("rozmiar okna");
-        przycisk.setSize(100,200);
-        przycisk.addActionListener(this);
+
+
+
         // Ustawienie layoutu i dodanie przycisku do okna
         okno.setLayout(new FlowLayout(FlowLayout.LEFT)); // Ustawienie FlowLayout z wyśrodkowaniem
         okno.add(rozmiar_okna);
         okno.add(przycisk);
+        okno.add(tekst1);
+        okno.add(tekst2);
 
-        okno.setSize(400,500);
-        okno.setVisible(true);
+
         okno.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
     @Override
@@ -43,7 +56,8 @@ public class InterfejsZDwomaPrzyciskami implements ActionListener , MouseListene
             System.out.println(okno.getDefaultCloseOperation());
             System.out.println(e.getSource());
         } else if (e.getSource()==przycisk) {
-            System.out.println("przycisk");
+            System.out.println(tekst1.getText());
+            tekst2.setText(tekst1.getText());
 
         }
 
