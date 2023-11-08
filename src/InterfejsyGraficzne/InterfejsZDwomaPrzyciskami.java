@@ -8,7 +8,8 @@ import java.awt.GridLayout;
 public class InterfejsZDwomaPrzyciskami implements ActionListener , MouseListener  {
     JFrame okno;
     JButton rozmiar_okna;
-    JButton przycisk;
+    JButton przycisk,przycisk_textArea;
+    JTextArea TextArea;
     TextField tekst1;
     TextField tekst2;
     public static int wartosc = 0 ;
@@ -21,10 +22,14 @@ public class InterfejsZDwomaPrzyciskami implements ActionListener , MouseListene
         okno = new JFrame("Okno z przyciskiem");
         rozmiar_okna = new JButton("2");
         przycisk = new JButton("skopiuj tekst ");
+        przycisk_textArea = new JButton("TextArea");
         tekst1 = new TextField("wpisz tekst");
         tekst2 = new TextField("tekst skopiowany");
+        TextArea = new JTextArea("TEXTAREA");
+        TextArea.setPreferredSize(new Dimension (400,400));
         rozmiar_okna.setSize(200, 200); // Ustawienie rozmiarów przycisku
         przycisk.setSize(200,200);
+        przycisk_textArea.setSize(500,500);
         tekst1.setSize(100,100);
         okno.setSize(400,100);
         okno.setLayout(new GridLayout(2,2));
@@ -32,15 +37,14 @@ public class InterfejsZDwomaPrzyciskami implements ActionListener , MouseListene
         rozmiar_okna.addActionListener(this);
         okno.addMouseListener(this);
         przycisk.addActionListener(this);
+        przycisk_textArea.addActionListener(this);
         rozmiar_okna.setForeground(Color.GREEN);
         rozmiar_okna.setBackground(Color.RED);
-
-
-
-        // Ustawienie layoutu i dodanie przycisku do okna
-        okno.setLayout(new FlowLayout(FlowLayout.LEFT)); // Ustawienie FlowLayout z wyśrodkowaniem
+        okno.setLayout(new FlowLayout(FlowLayout.LEFT));
         okno.add(rozmiar_okna);
         okno.add(przycisk);
+        okno.add(przycisk_textArea);
+        okno.add(TextArea);
         okno.add(tekst1);
         okno.add(tekst2);
 
@@ -58,7 +62,13 @@ public class InterfejsZDwomaPrzyciskami implements ActionListener , MouseListene
         } else if (e.getSource()==przycisk) {
             System.out.println(tekst1.getText());
             tekst2.setText(tekst1.getText());
+        }
+        else if(e.getSource()==przycisk_textArea){
 
+            Dimension b = okno.getSize();
+            String a = b.toString();
+            TextArea.setText(a);
+            System.out.println(b);
         }
 
 
@@ -71,6 +81,7 @@ public class InterfejsZDwomaPrzyciskami implements ActionListener , MouseListene
 
     @Override
     public void mousePressed(MouseEvent e){
+
         System.out.println("myszka");
     }
 
