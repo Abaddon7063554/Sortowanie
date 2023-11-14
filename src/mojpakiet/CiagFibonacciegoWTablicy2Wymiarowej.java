@@ -35,9 +35,9 @@ public class CiagFibonacciegoWTablicy2Wymiarowej{
         tab[9][8]=tab[8][9]+tab[9][9];
 
 
-        for (int j = 9 ;j>-1;j--){
+        for(int i=9;i>-1;i--){
 
-           }
+        }
 
 
 
