@@ -1,43 +1,38 @@
 package mojpakiet;
 
 public class CiagFibonacciegoWTablicy2Wymiarowej{
-    public static int[][] tab = new int[10][10];
+    public static int dl =10;
+    public static int wys = 10,gora=2;
+    public static int[][] tab = new int[wys][dl];
     public static void main(String[] args) {
+        tab[0][0] = 1;
+        tab[0][1] = 1;
 
-        int[] tab1 = new int[10];
-        int l1 = 1, l2 = 1, l3;
-        tab1[0] = l1;
-        tab1[1] = l2;
-        tab[0][0] = l1;
-        tab[0][1] = l2;
+int a = 0 ;
+    for (int k =0 ; k<10;k++) {
+        for (int i = 2; i < 10; i++) {
+            tab[a][i] = tab[a][i - 2] + tab[a][i - 1];
+
+        }
+        tab[1][9] = tab[0][8] + tab[0][9];
 
         for (int i = 2; i < 10; i++) {
-            tab1[i] = tab1[i - 2] + tab1[i - 1];
-            // for(int j = 2 ; j<10;j++){
-
-            // }
+            tab[i][9] = tab[i - 2][9] + tab[i - 1][9];
         }
+        tab[9][9] = tab[7][9] + tab[8][9];
+        tab[9][8] = tab[8][9] + tab[9][9];
 
-        for (int i = 0; i < 10; i++) {
-            System.out.print(tab1[i] + " ");
+
+        for (int i = 7; i >= 0; i--) {
+            tab[9][i] = tab[9][i + 2] + tab[9][i + 1];
         }
-        System.out.println("\n \n");
-
-        for (int i = 2; i < 10; i++) {
-            tab[0][i] =tab[0][i - 2] + tab[0][i - 1];
+        tab[8][0] = tab[9][1] + tab[9][0];
+        for (int i = 7; i > 0; i--) {
+            tab[i][0] = tab[i + 2][0] + tab[i + 1][0];
         }
-        tab[1][9]=tab[0][8]+tab[0][9];
-        tab[2][9]=tab[0][9]+tab[1][9];
-        for (int i = 2; i < 10; i++) {
-            tab[i][9] =tab[i-2][9] + tab[i-1][9];
-        }
-        tab[9][9]=tab[7][9]+tab[8][9];
-        tab[9][8]=tab[8][9]+tab[9][9];
+a++;
+    }
 
-
-        for(int i=9;i>-1;i--){
-
-        }
 
 
 

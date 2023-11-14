@@ -1,0 +1,35 @@
+
+k	java:S1178"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ê†Þ½ùÿÿÿÿ
+f	java:S1179"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™®ýŒ
+k	java:S117:"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.( ÓþÈþÿÿÿÿ
+i
+java:S1104"SMake tablica a static final constant or non-public and provide accessors if needed.(¤ÅÛø
+C
+java:S1444"-Make this "public static tablica" field final(¤ÅÛø
+b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ü–•÷
+b	java:S1011"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(—«
+3
+java:S2386"Make this member "protected".(¤ÅÛø
+c	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(°–ƒ«
+L
+java:S2696"6Make the enclosing method "static" or remove this set.(•ÕÜî
+E	java:S106"+Replace this use of System.out by a logger.(ªÓ¼áþÿÿÿÿ
+h	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(­Üž—þÿÿÿÿ
+E	java:S106"+Replace this use of System.out by a logger.(ÌµÚÍþÿÿÿÿ
+E	java:S106"+Replace this use of System.out by a logger.(ªÓ¼áþÿÿÿÿ
+@	java:S106""+Replace this use of System.out by a logger.(×÷†¡
+J
+java:S1172$"/Remove these unused method parameters "a", "b".(–£±¥üÿÿÿÿ
+@	java:S106%"+Replace this use of System.out by a logger.(›õ¦Ì
+E	java:S106)"+Replace this use of System.out by a logger.(ìÑÑÈÿÿÿÿÿ
+@	java:S106."+Replace this use of System.out by a logger.(ÚÆá
+[
+java:S1854:"@Remove this useless assignment to local variable "KlasaTestow2".( ÓþÈþÿÿÿÿ
+Y
+java:S18548">Remove this useless assignment to local variable "KlasaTest1".(Ê†Þ½ùÿÿÿÿ
+J
+java:S14818"/Remove this unused "KlasaTest1" local variable.(Ê†Þ½ùÿÿÿÿ
+L
+java:S1481:"1Remove this unused "KlasaTestow2" local variable.( ÓþÈþÿÿÿÿ
+J
+java:S1128"/Remove this unused import 'java.sql.SQLOutput'.(ê¤òÃùÿÿÿÿ

@@ -1,0 +1,30 @@
+
+n
+java:S1104"SMake wartosc a static final constant or non-public and provide accessors if needed.(´Òç‚øÿÿÿÿ
+H
+java:S1444"-Make this "public static wartosc" field final(´Òç‚øÿÿÿÿ
+n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¸â÷i
+l	java:S116
+"WRename this field "rozmiar_okna" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(©…ƒØ
+v	java:S116"\Rename this field "przycisk_textArea" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(âî†Éşÿÿÿÿ
+h	java:S116"SRename this field "TextArea" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¨Î‹
+œ
+java:S1186N"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ä Ïúüÿÿÿÿ
+—
+java:S1186Y"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ãÆĞÂ
+œ
+java:S1186^"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ö„˜şúÿÿÿÿ
+œ
+java:S1186c"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(•ßçùÿÿÿÿ
+J
+java:S1659"/Declare "przycisk_textArea" on a separate line.(âî†Éşÿÿÿÿ
+d
+java:S32524"IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(ºĞŞÿÿÿÿÿ
+@	java:S1069"+Replace this use of System.out by a logger.(úßÎ 
+@	java:S106:"+Replace this use of System.out by a logger.(¨¬²Ö
+E	java:S106;"+Replace this use of System.out by a logger.(¦à„ûÿÿÿÿ
+?	java:S106<"+Replace this use of System.out by a logger.(‹¿Ü
+@	java:S106="+Replace this use of System.out by a logger.(†¦ªÇ
+?	java:S106?"+Replace this use of System.out by a logger.(»Ñˆ)
+E	java:S106G"+Replace this use of System.out by a logger.(š—°øÿÿÿÿ
+E	java:S106U"+Replace this use of System.out by a logger.(òó­ãùÿÿÿÿ
