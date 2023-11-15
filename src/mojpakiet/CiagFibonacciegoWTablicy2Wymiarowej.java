@@ -9,8 +9,9 @@ public class CiagFibonacciegoWTablicy2Wymiarowej{
         tab[0][1] = 1;
 
 int a = 0 ;
+int b = 10;
     for (int k =0 ; k<10;k++) {
-        for (int i = 2; i < 10; i++) {
+        for (int i = 2; i < b; i++) {
             tab[a][i] = tab[a][i - 2] + tab[a][i - 1];
 
         }
@@ -30,7 +31,8 @@ int a = 0 ;
         for (int i = 7; i > 0; i--) {
             tab[i][0] = tab[i + 2][0] + tab[i + 1][0];
         }
-a++;
+        a++;
+        b--;
     }
 
 
